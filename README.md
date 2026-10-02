@@ -46,6 +46,7 @@ See [`docs/01_methodology.md`](docs/01_methodology.md) for details.
 │   ├── assumptions/                 # scenario inputs (illustrative)
 │   └── tests/                       # model sanity tests
 ├── templates/                       # interview guide, survey, supplier scorecard
+├── .github/workflows/               # CI: runs model tests on every push
 └── confidential/                    # git-ignored; real data stays local
 ```
 
@@ -68,8 +69,19 @@ python -m unittest discover -s model/tests           # runs the sanity tests
 | Competitive landscape | 🟡 In progress |
 | Operations and regulatory review | 🟡 In progress |
 | Financial model v1 | ✅ Complete (illustrative inputs) |
-| Risk register | 🟡 In progress |
-| Findings and recommendation | ⚪ Not started |
+| Risk register | ✅ v1 complete |
+| Research templates (interviews, survey, supplier scorecard) | ✅ Complete |
+| Findings and recommendation | 🟡 Preliminary |
+
+## Preliminary Result (illustrative inputs)
+
+| Scenario | NPV | IRR | Payback |
+|----------|----:|----:|--------:|
+| Downside | −$354k | n/a | > 5 yrs |
+| Base | −$10k | 14.7% | 4.2 yrs |
+| Upside | $496k | 114% | 1.7 yrs |
+
+Weighted feasibility score **3.10 / 5**, which leads to **Go with conditions**: a capped pilot that has to validate price and customer acquisition cost before full launch. See [`docs/07_findings_recommendation.md`](docs/07_findings_recommendation.md).
 
 ## Skills Demonstrated
 
