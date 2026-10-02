@@ -1,0 +1,29 @@
+# --- Confidential material: never committed ---
+# Real venture name/details, supplier contacts, quotes, interview notes, pricing
+confidential/
+data/raw/
+data/interviews/
+*.private.*
+*.local.json
+
+# Working spreadsheets / exports (publish sanitized versions only)
+*.xlsx
+*.xls
+*.pdf
+~$*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Model outputs (regenerate locally)
+model/output/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
